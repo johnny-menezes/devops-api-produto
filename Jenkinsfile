@@ -2,6 +2,20 @@ pipeline {
     agent any
 
     stages {
+        stage ('Test Initial')
+            steps {
+                echo 'Iniciando a pipeline'
+            }
+    }
+}
+
+
+
+/*
+pipeline {
+    agent any
+
+    stages {
         stage ('Build Image') {
             steps {
                 script {
@@ -34,3 +48,4 @@ pipeline {
         }
     }
 }
+*/
